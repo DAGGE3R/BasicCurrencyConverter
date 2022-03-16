@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Conversion de Monnaie"
+        android:textAlignment="center"
+        android:textColor="#8762d0"
+        android:textSize="30dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="55dp"
+        android:text="Saisie le montant svp"
+        android:textAlignment="center"
+        android:textColor="#8762d0"
+        android:textSize="20dp"
+        android:textStyle="normal">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/mnt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:inputType="text"
+        android:textColor="#212121">
+
+    </EditText>
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp">
+
+        <RadioButton
+            android:id="@+id/EuDr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Euro -> Dinar"
+            android:textColor="#f54952"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/DrEu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dinar -> Euro"
+            android:textColor="#f54952"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="CONVERT" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/border"
+        android:text="  Result is ..."
+        android:textColor="#212121"
+        android:textSize="20dp">
+
+    </TextView>
+</LinearLayout>
